@@ -52,4 +52,34 @@ header, section, footer, aside, nav, main, article, figure {
 .header__active a{
     color: #ff0e83 !important;
 }
+/* carousel */
+.carousel{
+    background-image: url("../img/b3.jpg");
+    height: 70rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.carousel__content{
+    text-align: center;
+    color: white; 
+}
+.carousel__content h1{
+    font-size: 5rem;
+}
+.carousel__content p{
+    font-size: 2rem;
+    margin-top: 1rem
+}
+.carousel__content button{
+    padding: 13px 32px;
+    margin-top: 2rem;
+    background-color: #ff0e83;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    color: white
+}
 
