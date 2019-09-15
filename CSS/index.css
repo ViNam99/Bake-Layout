@@ -61,7 +61,6 @@ header, section, footer, aside, nav, main, article, figure {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .carousel__content{
     text-align: center;
@@ -80,6 +79,67 @@ header, section, footer, aside, nav, main, article, figure {
     background-color: #ff0e83;
     border-radius: 5px;
     border: 1px solid #fff;
-    color: white
+    color: white;
+    cursor: pointer;
 }
+.carousel__content button:hover{
+    background-color: white;
+    color: black
+}
+/* intro */
+.intro{
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%;  tương đương cách dưới*/
+    /* grid-template-columns: repeat(4,25%); */
+    grid-template-columns: repeat(4,1fr);
+}
+.intro__ab1{
+    /* grid-column: 2 / 4; */
+    grid-column: 2 / span 2;
+}
+.intro__bake{
+    /* grid-column: 1 / 3; */
+    grid-column: 1 / span 2;
+}
+.intro__ab4{
+    /* grid-column: 3 / 5 ; */
+    grid-column: 3 / span 2;
+}
+.intro__items img {
+    width: 100%;
+    display: block;
+}
+.intro__bgindio{
+    background-color: #4e2a84;
+    text-align: center;
+}
+.intro__h3 {
+    font-size: 27px;
+    color: white;
+}
+/* number */
+.number__content{
+    margin: 0 auto;
+    width: 75%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+.number__items{
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #000;
+}
+.number__items p:first-child{
+    color: #4e2a84;
+    margin-bottom: 15px;
+    font-size: 3.5rem;
+}
+
 
