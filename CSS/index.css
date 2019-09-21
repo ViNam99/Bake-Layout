@@ -348,6 +348,21 @@ figure {
     text-align: right
 }
 
+.gallery__text p {
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    transition: all 0.5s;
+    transform: translateY(55px);
+    color: white;
+    opacity: 0;
+}
+
+.gallery__items:hover .gallery__text p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .gallery__text h2::after {
     content: '';
     /* bắt buộc phải có Content để before vs after hiển thị */
@@ -363,16 +378,6 @@ figure {
     opacity: 0;
 }
 
-.gallery__text p {
-    position: absolute;
-    bottom: 20px;
-    right: 5px;
-    transition: all 0.5s;
-    transform: translateY(55px);
-    color: white;
-    opacity: 0;
-}
-
 .gallery__text h2 {
     transition: all 0.5s;
 }
@@ -382,11 +387,6 @@ figure {
 }
 
 .gallery__items:hover h2::after {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.gallery__items:hover .gallery__text p {
     transform: translateY(0);
     opacity: 1;
 }
