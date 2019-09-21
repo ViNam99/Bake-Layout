@@ -390,3 +390,117 @@ figure {
     transform: translateY(0);
     opacity: 1;
 }
+
+
+/* team */
+
+.team {
+    padding: 50px 0;
+    background-color: #4e2a84;
+    margin-top: 5rem
+}
+
+.team__h2 {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+.team__items img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.team__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    margin: 0 auto;
+    color: white;
+    grid-gap: 3rem;
+    margin-top: 4rem;
+    font-size: 1.8rem
+}
+
+.team__items {
+    position: relative;
+}
+
+.team__bgpink {
+    position: absolute;
+    /* sau khi dùng  position: absolute sẽ mất width và height nên phải set lại cho nó */
+    background-color: #FF0E83;
+    width: 100%;
+    padding: 30px;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 1s
+}
+
+.team__items:hover .team__bgpink {
+    opacity: 0;
+}
+
+.team__bgblack {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all 1s
+}
+
+.team__items:hover .team__bgblack {
+    opacity: 0.8;
+}
+
+.team__bgblack h3 {
+    margin-top: 150px;
+    margin-left: 15px
+}
+
+.team__bgblack p {
+    margin-top: 10px;
+    margin-left: 15px
+}
+
+.team__items2 {
+    overflow: hidden;
+    /* cho ở th cha */
+}
+
+.team__items2 .team__bgblack {
+    opacity: 0;
+    transform: translateX(-110%);
+    transition: all 1s
+}
+
+.team__items2:hover .team__bgblack {
+    opacity: 0.8;
+    transform: translateX(0);
+}
+
+.team__items3 .team__bgblack {
+    transition: all 1s;
+    transform: rotateX(0);
+}
+
+.team__items3:hover .team__bgblack {
+    transform: rotate(360deg);
+    /* xoay */
+}
+
+.team__items4 .team__bgblack {
+    transition: all 1s;
+    transform: scale(0)
+    /* zoom */
+}
+
+.team__items4:hover .team__bgblack {
+    transform: scale(1)
+}
