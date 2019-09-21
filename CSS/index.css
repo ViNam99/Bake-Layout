@@ -1,60 +1,89 @@
 /* Global */
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 10px; /* HTML khai báo font-size là 10px , khi dùng rem trình duyệt sẽ hiểu 1rem = 10px */
+    font-size: 10px;
+    /* HTML khai báo font-size là 10px , khi dùng rem trình duyệt sẽ hiểu 1rem = 10px */
     /* Khi ko khai báo font-size thì 1rem = 16px */
     /* font-size dùng đơn vị rem */
 }
-header, section, footer, aside, nav, main, article, figure {
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
     display: block;
 }
+
+
 /* header */
-.header{
+
+.header {
     padding: 2rem 0;
     background-color: #4e2a84;
     letter-spacing: 0.2rem;
 }
-.header__content{
+
+.header__content {
     width: 70%;
     margin: 0 auto;
     display: flex;
     /* Thêm cho th cha cho th con lên trên 1 hàng */
     /* justify-content canh chỉnh th con  */
-    justify-content: space-around;     /* chia đều khoảng cách các con*/
-    align-items: center ;/* canh các con theo chiều dọc */
+    justify-content: space-around;
+    /* chia đều khoảng cách các con*/
+    align-items: center;
+    /* canh các con theo chiều dọc */
 }
-.header__p{
+
+.header__p {
     color: white;
     font-size: 4rem;
 }
+
+
 /* nav */
+
 .header__nav ul {
     list-style: none;
 }
+
 .header__nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.5rem   
+    font-size: 1.5rem
 }
+
 .header__nav ul li {
     display: inline;
     margin: 2rem;
     font-weight: 600;
 }
-.header__nav a:hover{
+
+.header__nav a:hover {
     color: #ff0e83;
     transition: all .5s;
 }
-.header__active a{
+
+.header__active a {
     color: #ff0e83 !important;
 }
+
+
 /* carousel */
-.carousel{
+
+.carousel {
     background-image: url("../img/b3.jpg");
     height: 70rem;
     background-repeat: no-repeat;
@@ -63,18 +92,22 @@ header, section, footer, aside, nav, main, article, figure {
     justify-content: center;
     align-items: center;
 }
-.carousel__content{
+
+.carousel__content {
     text-align: center;
-    color: white; 
+    color: white;
 }
-.carousel__content h1{
+
+.carousel__content h1 {
     font-size: 5rem;
 }
-.carousel__content p{
+
+.carousel__content p {
     font-size: 2rem;
     margin-top: 1rem
 }
-.carousel__content button{
+
+.carousel__content button {
     padding: 13px 32px;
     margin-top: 2rem;
     background-color: #ff0e83;
@@ -83,72 +116,91 @@ header, section, footer, aside, nav, main, article, figure {
     color: white;
     cursor: pointer;
 }
-.carousel__content button:hover{
+
+.carousel__content button:hover {
     background-color: white;
     color: black;
     transition: all .5s;
 }
+
+
 /* intro */
-.intro{
+
+.intro {
     width: 100%;
     height: auto;
     font-size: 1.5rem;
     display: grid;
     /* grid-template-columns: 25% 25% 25% 25%;  tương đương cách dưới*/
     /* grid-template-columns: repeat(4,25%); */
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 10rem;
 }
-.intro__items{
+
+.intro__items {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.intro__wrapper{
+
+.intro__wrapper {
     width: 80%;
     margin: 0px auto;
 }
-.intro__ab1{
+
+.intro__ab1 {
     /* grid-column: 2 / 4; */
     grid-column: 2 / span 2;
 }
-.intro__bake{
+
+.intro__bake {
     /* grid-column: 1 / 3; */
     grid-column: 1 / span 2;
 }
-.intro__ab4{
+
+.intro__ab4 {
     /* grid-column: 3 / 5 ; */
     grid-column: 3 / span 2;
 }
+
 .intro__items img {
     width: 100%;
     display: block;
 }
+
 .intro__h3 {
     font-size: 2.7rem;
     color: white;
     margin-bottom: 1.5rem;
 }
+
 .intro__items p {
     color: #c1c1c1;
     font-size: 1.4rem;
 }
-.intro__items:first-child, .intro__items:nth-child(8){
+
+.intro__items:first-child,
+.intro__items:nth-child(8) {
     background-color: #4e2a84
 }
-.intro__items:nth-child(3){
+
+.intro__items:nth-child(3) {
     background-color: #FF0E83;
 }
-.intro__items:nth-child(4){
+
+.intro__items:nth-child(4) {
     background-color: #ED6498
 }
-.intro__items:nth-child(6){
+
+.intro__items:nth-child(6) {
     background-color: #836EAA;
 }
 
+
 /* number */
-.number__content{
+
+.number__content {
     margin: 0 auto;
     width: 75%;
     height: 25rem;
@@ -156,49 +208,59 @@ header, section, footer, aside, nav, main, article, figure {
     justify-content: space-around;
     align-items: center
 }
-.number__items{
+
+.number__items {
     font-size: 2.3rem;
     text-align: center;
     font-weight: bold;
     letter-spacing: 0.4rem;
     color: #000;
 }
-.number__items p:first-child{
+
+.number__items p:first-child {
     color: #4e2a84;
     margin-bottom: 15px;
     font-size: 3.5rem;
 }
+
+
 /* service */
-.service{
+
+.service {
     padding: 5rem 0;
     background-image: url("../img/s1.jpg");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
-.service__h2{
+
+.service__h2 {
     text-align: center;
     color: #fff;
     font-size: 5.0rem;
     margin-bottom: 50px
 }
-.service__content{
+
+.service__content {
     width: 75%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    text-align:  center
+    text-align: center
 }
-.service__items h3{
+
+.service__items h3 {
     font-size: 2.6rem;
     margin-bottom: 15px
 }
-.service__items p{
+
+.service__items p {
     font-size: 1.4rem;
     margin-bottom: 15px;
     font-weight: 500
 }
+
 .service__items i {
     width: 11rem;
     height: 11rem;
@@ -210,11 +272,13 @@ header, section, footer, aside, nav, main, article, figure {
     color: #4e2a84;
     margin-bottom: 2.0rem;
 }
-.service__items i:hover{
+
+.service__items i:hover {
     color: #ff0e83;
     transition: all .5s;
 }
-.service__items button{
+
+.service__items button {
     padding: 13px 32px;
     margin-top: 2rem;
     background-color: #ff0e83;
@@ -223,7 +287,8 @@ header, section, footer, aside, nav, main, article, figure {
     color: white;
     cursor: pointer;
 }
-.service__items button:hover{
+
+.service__items button:hover {
     background-color: white;
     color: black;
     /* transition-property: all;
@@ -232,68 +297,96 @@ header, section, footer, aside, nav, main, article, figure {
     transition-delay: 0 */
     transition: all .5s;
 }
+
+
 /* gallery */
-.gallery__h2{
+
+.gallery__h2 {
     text-align: center;
     font-size: 5.0rem;
     font-weight: 600;
-    margin:50px
+    margin: 50px
 }
-.gallery__content{
-  width: 98%;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-gap: 30px;
-  margin: 0 auto;
+
+.gallery__content {
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin: 0 auto;
 }
-.gallary__g1{
+
+.gallary__g1 {
     grid-column: 1 / span 2;
 }
-.gallary__g6{
+
+.gallary__g6 {
     grid-column: 3 / span 2;
 }
-.gallery__items img{
+
+.gallery__items img {
     width: 100%;
     height: 100%;
     display: block;
-   
 }
-.gallery__items{
-    position: relative;
 
+.gallery__items {
+    position: relative;
+    overflow: hidden;
+    /* Che phần con khi nó vượt ra ngoài border thẻ cha */
 }
-.gallery__text{
-   font-size: 1.5rem;
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   color:white;
-   padding: 50px;
-   text-align: right
+
+.gallery__text {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 50px;
+    text-align: right
 }
-.gallery__text h2::after{
-    content: '';    /* bắt buộc phải có Content để before vs after hiển thị */
-    display: block; /* phải có để set width height */
+
+.gallery__text h2::after {
+    content: '';
+    /* bắt buộc phải có Content để before vs after hiển thị */
+    display: block;
+    /* phải có để set width height */
     height: 3px;
     width: 100%;
     background-color: white;
     margin-top: 10px;
-    transform: translateY(45px);  /* Chưa hover */
-  transition: all 0.5s;
+    transform: translateY(45px);
+    /* Chưa hover */
+    transition: all 0.5s;
+    opacity: 0;
 }
-.gallery__text p{
+
+.gallery__text p {
     position: absolute;
     bottom: 20px;
+    right: 5px;
     transition: all 0.5s;
+    transform: translateY(55px);
+    color: white;
+    opacity: 0;
 }
+
 .gallery__text h2 {
     transition: all 0.5s;
 }
+
 .gallery__items:hover h2 {
     transform: translateY(-30px);
 }
-.gallery__items:hover h2::after{
+
+.gallery__items:hover h2::after {
     transform: translateY(0);
+    opacity: 1;
+}
+
+.gallery__items:hover .gallery__text p {
+    transform: translateY(0);
+    opacity: 1;
 }
