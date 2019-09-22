@@ -504,3 +504,37 @@ figure {
 .team__items4:hover .team__bgblack {
     transform: scale(1)
 }
+
+
+/* tes */
+
+.tes {
+    padding: 50px 0;
+    background-image: url("../img/cc1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40rem;
+}
+
+.tes h2 {
+    text-align: center;
+    font-size: 5rem;
+    color: white
+}
+
+.tes__content {
+    width: 75%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 3px solid #ff0e83;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+    background-color: rgba(205, 196, 187, 0.5)
+}
+
+.item i {
+    color: #2cbeff
+}
