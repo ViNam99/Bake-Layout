@@ -14,6 +14,8 @@
     <!-- Owl carousel -->
     <link rel="stylesheet" href="./CSS/owl.carousel.min.css">
     <link rel="stylesheet" href="./CSS/owl.theme.default.css">
+    <!-- Aos css animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="./CSS/index.css">
     <!-- Bên dưới độ ưu tiên cao hơn -->
@@ -41,7 +43,7 @@
         </div>
 
     </header>
-    <section class="carousel">
+    <section class="carousel ">
         <div class="carousel__content">
             <h1>Best Bake Here</h1>
             <p>Donec at massa nec sem eleifend fermentum.</p>
@@ -129,7 +131,7 @@
         </div>
 
     </section>
-    <section class="service">
+    <section class="service" data-aos="fade-up-right">
         <h2 class="service__h2">OUR SERVICES</h2>
         <div class="service__content">
             <div class="service__items  ">
@@ -330,16 +332,100 @@
                 <input type="text" name="txtName" id="txtname" placeholder="Name" required>
                 <input type="text" name="txtLastName" id="txtlastname" placeholder="Last Name">
                 <input type="text" name="txtEmail" id="txtemail" placeholder="Email">
-                <input type="text" name="txtNumber" id="txtnumber" placeholder="Number">
+                <input type="tel" name="txtNumber" id="txtnumber" placeholder="Number">
                 <textarea name="txtMessage" id="txtmessage" cols="50" rows="10" placeholder="Message"></textarea>
                 <button type="submit">SEND</button>
             </form>
         </div>
+        <div class="contact__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.62689151457!2d106.65640421474893!3d10.763211492330532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eec1e23547b%3A0x598473e1e7c19a53!2zTmjDoCBzw6FjaCBQaMO6IFRo4buN!5e0!3m2!1svi!2s!4v1569141479150!5m2!1svi!2s"
+                frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
 
     </section>
     <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__items">
+                <h2>About us</h2>
+                <p>ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+                </p>
+                <p>ultricies nec, pellentesque eu, pretium quis, sem. Nulla</p>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-google-plus-square"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
+            <div class="footer__items">
+                <h2>Working time</h2>
+                <ul>
+                    <li class="footer__flex">
+                        Monday
+                        <span>
+                            9:30-18:30
+                        </span>
+                    </li>
+                    <li class="footer__flex">
+                        Tuesday
+                        <span>
+                            9:30-18:30
+                        </span>
+                    </li>
+                    <li class="footer__flex">
+                        Wednesday
+                        <span>
+                            9:30-18:30
+                        </span>
+                    </li>
+                    <li class="footer__flex">
+                        Thursday
+                        <span>
+                            9:30-18:30
+                        </span>
+                    </li>
+                    <li class="footer__flex">
+                        Friday
+                        <span>
+                            9:30-18:30
+                        </span>
+                    </li>
+                    <li class="footer__flex">
+                        Saturday
+                        <span>
+                            9:30-18:30
+                        </span>
+                    </li>
+                    <li class="footer__flex">
+                        Sunday
+                        <span>
+                            9:30-18:30
+                        </span>
+                    </li>
 
+                </ul>
+            </div>
+            <div class="footer__items">
+                <h2>Twitter Us</h2>
+                <p>ultricies nec, pellentesque eu, pretium quis</p>
+                <p>ultricies nec, pellentesque eu, pretium quis,</p>
+                <p>ultricies nec, pellentesque eu, pretium quis,</p>
+                <p>ultricies nec, pellentesque eu</p>
+            </div>
+            <div class="footer__items">
+                <h2>SUBSCRIBE US</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="txtName" placeholder="name@gmail.com">
+                    <br>
+                    <button type="submit"> SEND</button>
+                    <p>ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla</p>
+                </form>
+            </div>
+        </div>
     </footer>
+    <div class="toTop">
+        <a href="#" class="cd-top text-replace js-cd-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+    </div>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
     </script>
@@ -354,6 +440,9 @@
     </script>
     <!-- Lightbox -->
     <script src="./JS/lightbox.min.js"></script>
+    <!-- ToTop -->
+    <script src="./JS/util.js"></script>
+    <script src="./JS/main.js"></script>
     <!-- Owl carousel -->
     <script src="./JS/owl.carousel.min.js"></script>
     <script>
@@ -382,6 +471,11 @@
             autoplayTimeout: 3000,
             autoplayHoverPause: true
         });
+    </script>
+    <!-- Aos js animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
